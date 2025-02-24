@@ -4,17 +4,17 @@ sys.path.append(os.path.abspath("src"))
 from mlproject.exception import CustomException
 from mlproject.logger import logging
 import pandas as pd
-from dotenv import load_dotenv
-import pymysql
+# from dotenv import load_dotenv
+# import pymysql
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
 
-load_dotenv()
-host=os.getenv("host")
-user=os.getenv("user")
-password=os.getenv("password")
-db=os.getenv('db')
+# load_dotenv()
+# host=os.getenv("host")
+# user=os.getenv("user")
+# password=os.getenv("password")
+# db=os.getenv('db')
 
 def save_object(file_path, obj):
     try:
